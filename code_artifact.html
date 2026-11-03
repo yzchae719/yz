@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모닝브루 | 망원동 골목 핸드드립 & 스콘 카페</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Noto Sans KR, Playfair Display) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FDFBF7',
+                        warmSand: '#F5EFE6',
+                        coffeeDark: '#3C2A21',
+                        coffeeBrown: '#6F4E37',
+                        warmAmber: '#D97706',
+                        warmOrange: '#E05A47',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #3C2A21;
+            word-break: keep-all;
+        }
+        .hero-pattern {
+            background-color: #FDFBF7;
+            background-image: radial-gradient(#E5D9CC 0.75px, transparent 0.75px);
+            background-size: 16px 16px;
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="smooth-scroll flex flex-col min-h-screen pb-20 md:pb-0">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur-md border-b border-stone-200/60">
+        <div class="max-w-3xl mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 group">
+                <i class="fa-solid fa-mug-hot text-warmOrange text-xl transition-transform group-hover:rotate-12"></i>
+                <span class="font-serif font-bold text-xl tracking-tight text-coffeeDark">Morning Brew</span>
+            </a>
+            <div class="flex items-center gap-2">
+                <a href="tel:02-123-4567" class="px-3 py-1.5 text-xs font-medium rounded-full bg-warmSand text-coffeeDark hover:bg-stone-200 transition">
+                    <i class="fa-solid fa-phone mr-1 text-warmAmber"></i>전화
+                </a>
+                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 text-xs font-medium rounded-full bg-warmSand text-coffeeDark hover:bg-stone-200 transition">
+                    <i class="fa-brands fa-instagram mr-1 text-pink-600"></i>인스타
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- HERO SECTION -->
+        <section class="hero-pattern py-12 md:py-20 px-4 text-center border-b border-stone-200/50">
+            <div class="max-w-2xl mx-auto">
+                <span class="inline-block px-3 py-1 mb-4 text-xs font-semibold tracking-wider text-warmOrange uppercase bg-orange-100/70 rounded-full">
+                    망원동 골목 끝 아지트
+                </span>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold font-serif text-coffeeDark mb-3 leading-tight">
+                    모닝브루 <span class="text-lg sm:text-2xl font-sans font-normal block mt-1 text-stone-600">Morning Brew</span>
+                </h1>
+                <p class="text-base sm:text-lg text-stone-700 font-normal leading-relaxed max-w-xl mx-auto mb-8 px-2">
+                    매일 아침 직접 내리는 정성 어린 핸드드립과<br class="hidden sm:inline"> 당일 구운 따뜻한 스콘이 기다리는 공간입니다.
+                </p>
+
+                <!-- Action CTA -->
+                <div class="flex flex-col sm:flex-row justify-center gap-3 px-4">
+                    <a href="#menu" class="w-full sm:w-auto px-6 py-3.5 bg-coffeeDark hover:bg-stone-800 text-white rounded-xl font-medium shadow-md transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-utensils text-sm"></i> 메뉴 둘러보기
+                    </a>
+                    <a href="#location" class="w-full sm:w-auto px-6 py-3.5 bg-warmOrange hover:bg-red-600 text-white rounded-xl font-medium shadow-md transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-location-dot text-sm"></i> 위치 및 오시는 길
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURES SECTION (특징 칩/카드) -->
+        <section class="py-8 bg-warmSand/40 border-b border-stone-200/50">
+            <div class="max-w-3xl mx-auto px-4">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+                    <div class="bg-white/80 p-4 rounded-2xl border border-stone-200/80 shadow-sm flex sm:flex-col items-center justify-start sm:justify-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-amber-100 text-warmAmber flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-filter text-lg"></i>
+                        </div>
+                        <div class="text-left sm:text-center">
+                            <h3 class="font-bold text-sm text-coffeeDark">직접 내리는 핸드드립</h3>
+                            <p class="text-xs text-stone-500 mt-0.5">매일 아침 신선한 원두 추출</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/80 p-4 rounded-2xl border border-stone-200/80 shadow-sm flex sm:flex-col items-center justify-start sm:justify-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-orange-100 text-warmOrange flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-cookie text-lg"></i>
+                        </div>
+                        <div class="text-left sm:text-center">
+                            <h3 class="font-bold text-sm text-coffeeDark">당일 구운 수제 스콘</h3>
+                            <p class="text-xs text-stone-500 mt-0.5">겉바속촉 고소한 디저트</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-white/80 p-4 rounded-2xl border border-stone-200/80 shadow-sm flex sm:flex-col items-center justify-start sm:justify-center gap-3">
+                        <div class="w-10 h-10 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-chair text-lg"></i>
+                        </div>
+                        <div class="text-left sm:text-center">
+                            <h3 class="font-bold text-sm text-coffeeDark">편안한 1인 좌석</h3>
+                            <p class="text-xs text-stone-500 mt-0.5">혼자 와도 부담 없는 공간</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MENU SECTION -->
+        <section id="menu" class="py-12 md:py-16 px-4 max-w-3xl mx-auto">
+            <div class="text-center mb-8">
+                <h2 class="text-2xl sm:text-3xl font-bold font-serif text-coffeeDark">Signature Menu</h2>
+                <p class="text-sm text-stone-500 mt-1">모닝브루가 정성스럽게 준비한 대표 메뉴입니다.</p>
+                <div class="w-12 h-1 bg-warmOrange mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- 메뉴 카드 1 -->
+                <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="inline-block px-2 py-0.5 text-[11px] font-semibold bg-amber-100 text-amber-800 rounded">시그니처</span>
+                            <span class="font-bold text-warmOrange text-lg">5,500원</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-coffeeDark mb-1">핸드드립 커피</h3>
+                        <p class="text-sm text-stone-600 leading-relaxed mb-3">
+                            매일 아침 정성껏 내리는 시그니처 드립 커피. 깊고 은은한 풍미를 자랑합니다.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-dashed border-stone-200 text-xs text-stone-400 flex items-center gap-1">
+                        <i class="fa-solid fa-check text-warmOrange"></i> 모닝브루 추천 1위
+                    </div>
+                </div>
+
+                <!-- 메뉴 카드 2 -->
+                <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="inline-block px-2 py-0.5 text-[11px] font-semibold bg-stone-100 text-stone-700 rounded">매일 변동</span>
+                            <span class="font-bold text-warmOrange text-lg">4,500원</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-coffeeDark mb-1">오늘의 원두</h3>
+                        <p class="text-sm text-stone-600 leading-relaxed mb-3">
+                            매일 새로워지는 다채로운 풍미의 드립 커피. 바리스타가 엄선한 원두를 만나보세요.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-dashed border-stone-200 text-xs text-stone-400 flex items-center gap-1">
+                        <i class="fa-solid fa-leaf text-emerald-600"></i> 원두 정보는 매일 업데이트
+                    </div>
+                </div>
+
+                <!-- 메뉴 카드 3 -->
+                <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="inline-block px-2 py-0.5 text-[11px] font-semibold bg-orange-100 text-orange-800 rounded">당일 베이킹</span>
+                            <span class="font-bold text-warmOrange text-lg">3,500원</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-coffeeDark mb-1">수제 스콘</h3>
+                        <p class="text-sm text-stone-600 leading-relaxed mb-3">
+                            당일 아침 직접 구워 겉은 바삭하고 속은 촉촉한 고소함 가득 스콘입니다.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-dashed border-stone-200 text-xs text-stone-400 flex items-center gap-1">
+                        <i class="fa-solid fa-wheat-awn text-amber-600"></i> 버터 풍미 가득
+                    </div>
+                </div>
+
+                <!-- 메뉴 카드 4 -->
+                <div class="bg-white p-5 rounded-2xl border border-stone-200/80 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <span class="inline-block px-2 py-0.5 text-[11px] font-semibold bg-rose-100 text-rose-800 rounded">수제 청</span>
+                            <span class="font-bold text-warmOrange text-lg">6,000원</span>
+                        </div>
+                        <h3 class="font-bold text-lg text-coffeeDark mb-1">계절 과일 에이드</h3>
+                        <p class="text-sm text-stone-600 leading-relaxed mb-3">
+                            신선한 제철 과일을 담아 직접 담근 수제청으로 만든 청량하고 상큼한 에이드.
+                        </p>
+                    </div>
+                    <div class="pt-3 border-t border-dashed border-stone-200 text-xs text-stone-400 flex items-center gap-1">
+                        <i class="fa-solid fa-wine-glass text-rose-500"></i> 시즌 한정 음료
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LOCATION & HOURS SECTION -->
+        <section id="location" class="py-12 bg-warmSand/50 border-t border-stone-200/60 px-4">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl sm:text-3xl font-bold font-serif text-coffeeDark">Visit Us</h2>
+                    <p class="text-sm text-stone-500 mt-1">모닝브루 오시는 길 및 영업 안내</p>
+                    <div class="w-12 h-1 bg-warmOrange mx-auto mt-3 rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- 위치 정보 카드 -->
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-orange-100 text-warmOrange flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-map-location-dot text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-base text-coffeeDark">위치 안내</h3>
+                                <p class="text-xs text-stone-500">망원동 골목 끝 아늑한 카페</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-2 text-sm text-stone-700 mb-4">
+                            <p class="font-medium text-coffeeDark">
+                                <i class="fa-solid fa-location-pin text-warmOrange mr-2"></i>서울 마포구 망원동 골목 끝
+                            </p>
+                            <p class="text-xs text-stone-500 pl-6">
+                                지하철 6호선 <strong class="text-stone-700">망원역 2번 출구</strong>에서 도보 6분 거리
+                            </p>
+                        </div>
+
+                        <!-- 길찾기 간단 안내 바 -->
+                        <div class="bg-cream p-3 rounded-xl border border-stone-200 text-xs text-stone-600">
+                            <i class="fa-solid fa-person-walking mr-1 text-warmAmber"></i> 2번 출구 나와 우측 골목 진입 후 300m 직진
+                        </div>
+                    </div>
+
+                    <!-- 영업시간 카드 -->
+                    <div class="bg-white p-6 rounded-2xl border border-stone-200/80 shadow-sm">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-amber-100 text-warmAmber flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-base text-coffeeDark">영업시간</h3>
+                                <p class="text-xs text-stone-500">운영 시간 및 정기 휴무</p>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between items-center pb-2 border-b border-stone-100">
+                                <span class="text-stone-600 font-medium"><i class="fa-regular fa-calendar-check mr-2 text-warmOrange"></i>화요일 ~ 일요일</span>
+                                <span class="font-bold text-coffeeDark">08:00 ~ 20:00</span>
+                            </div>
+                            <div class="flex justify-between items-center text-rose-600 font-medium">
+                                <span><i class="fa-solid fa-circle-exclamation mr-2"></i>매주 월요일</span>
+                                <span class="bg-rose-50 px-2 py-0.5 rounded text-xs">정기 휴무</span>
+                            </div>
+                        </div>
+
+                        <div class="mt-4 pt-3 text-xs text-stone-500 flex items-center justify-between">
+                            <span><i class="fa-solid fa-mug-saucer mr-1 text-stone-400"></i>라스트 오더</span>
+                            <span>마감 30분 전 (19:30)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT & RESERVATION SECTION -->
+        <section class="py-12 px-4 max-w-3xl mx-auto text-center">
+            <div class="bg-gradient-to-br from-coffeeDark to-stone-900 text-white rounded-3xl p-6 sm:p-10 shadow-lg relative overflow-hidden">
+                <!-- Background decoration icon -->
+                <i class="fa-solid fa-coffee text-white/5 text-9xl absolute -bottom-6 -right-6 pointer-events-none"></i>
+
+                <h2 class="text-2xl sm:text-3xl font-bold font-serif mb-2">문의 & 예약 안내</h2>
+                <p class="text-stone-300 text-sm max-w-md mx-auto mb-6">
+                    원두 구매, 단체 예약, 혹은 카페 소식이 궁금하시다면 편하게 연락해 주세요.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-3 max-w-md mx-auto">
+                    <a href="tel:02-123-4567" class="w-full sm:w-1/2 py-3.5 px-4 bg-warmOrange hover:bg-orange-600 text-white rounded-xl font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-phone text-base"></i> 전화로 문의하기
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-full sm:w-1/2 py-3.5 px-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 rounded-xl font-bold text-sm backdrop-blur-sm transition flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-instagram text-base text-pink-400"></i> 인스타그램 방문
+                    </a>
+                </div>
+                
+                <p class="text-xs text-stone-400 mt-4">
+                    인스타그램 DM으로 당일 스콘 라인업 확인이 가능합니다.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-stone-900 text-stone-400 py-8 px-4 text-center text-xs border-t border-stone-800">
+        <div class="max-w-3xl mx-auto space-y-2">
+            <p class="font-serif font-bold text-sm text-stone-200">모닝브루 (Morning Brew)</p>
+            <p>서울 마포구 망원동 골목 끝 | 대표전화: 02-123-4567</p>
+            <p class="text-stone-500 pt-2">© Morning Brew. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- MOBILE STICKY BOTTOM BAR (모바일 전용 하단 고정 예약/전화 바) -->
+    <div class="md:hidden fixed bottom-0 left-0 right-0 bg-white/95 backdrop-blur-md border-t border-stone-200 p-3 z-50 flex gap-2 shadow-lg">
+        <a href="tel:02-123-4567" class="flex-1 py-3 bg-warmSand text-coffeeDark font-bold rounded-xl text-center text-xs flex items-center justify-center gap-1.5 active:bg-stone-300 transition">
+            <i class="fa-solid fa-phone text-warmOrange"></i> 전화 문의
+        </a>
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="flex-1 py-3 bg-warmOrange text-white font-bold rounded-xl text-center text-xs flex items-center justify-center gap-1.5 shadow-md active:bg-orange-700 transition">
+            <i class="fa-brands fa-instagram"></i> 인스타그램
+        </a>
+    </div>
+
+</body>
+</html>
